@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626882676514' stop='1626882676579'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1626882676515' status='broken' stop='1626882676565'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.124'/>
+            </parameters>
+            <steps>
+                <step start='1626882676524' status='broken' stop='1626882676563'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6d615d7c-09e3-43eb-8fb3-8e0db426a793-attachment.json' type='application/json' size='90'/>
+                    </attachments>
+                    <steps>
+                        <step start='1626882676536' status='broken' stop='1626882676563'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626882676543' status='broken' stop='1626882676563'>
+                                    <name>POST /session/:sessionId/url</name>
+                                    <title>POST /session/:sessionId/url</title>
+                                    <attachments>
+                                        <attachment title='Request' source='8343eb02-38e7-484b-ad12-89666c2637e6-attachment.json' type='application/json' size='50'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element.click is not a function</message>
+                <stack-trace>TypeError: element.click is not a function
+                    at utility.click (C:\Users\Suren\Downloads\WebdriverioTS\utilities\Element.ts:9:17)
+                    at HLogin.TestLogin (C:\Users\Suren\Downloads\WebdriverioTS\src\test.ts:25:15)
+                    at Context.&lt;anonymous> (C:\Users\Suren\Downloads\WebdriverioTS\test\specs\mocha.ts:5:16)
+                    at Context.executeAsync (C:\Users\Suren\Downloads\WebdriverioTS\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at Context.testFrameworkFnWrapper (C:\Users\Suren\Downloads\WebdriverioTS\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "(//span[@class='DocSearch-Hit-title'])[1]"
+}

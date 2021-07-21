@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1626859038230' stop='1626859038386'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1626859038230' status='broken' stop='1626859038383'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.164'/>
+            </parameters>
+            <steps>
+                <step start='1626859038233' status='broken' stop='1626859038383'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c37de31b-9fc3-48de-91cc-7b52b01ce049-attachment.json' type='application/json' size='74'/>
+                    </attachments>
+                    <steps>
+                        <step start='1626859038239' status='broken' stop='1626859038383'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1626859038242' status='broken' stop='1626859038383'>
+                                    <name>POST /session/:sessionId/url</name>
+                                    <title>POST /session/:sessionId/url</title>
+                                    <attachments>
+                                        <attachment title='Request' source='4906703f-64b4-49f8-84e2-a8831f1e0994-attachment.json' type='application/json' size='50'/>
+                                    </attachments>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element.click is not a function</message>
+                <stack-trace>TypeError: element.click is not a function
+                    at utility.clik (C:\Users\Lone_wolf\Downloads\webio ts\traininng-typescript\chromets\utilities\methods.ts:6:17)
+                    at HLogin.TestLogin (C:\Users\Lone_wolf\Downloads\webio ts\traininng-typescript\chromets\src\test.ts:32:15)
+                    at Context.&lt;anonymous> (C:\Users\Lone_wolf\Downloads\webio ts\traininng-typescript\chromets\test\specs\mocha.ts:5:16)
+                    at Context.executeAsync (C:\Users\Lone_wolf\Downloads\webio ts\traininng-typescript\chromets\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at Context.testFrameworkFnWrapper (C:\Users\Lone_wolf\Downloads\webio ts\traininng-typescript\chromets\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
